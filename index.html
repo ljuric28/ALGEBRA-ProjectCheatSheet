@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Frontend Cheat Sheet</title>
+        <meta charset="utf-8">
+        <meta name="autor" content="Luca Jurič">
+        <meta name="description" content="This is my fronted cheat sheet">
+        <meta name="viewport" content="width=divace-width, initial-scale=1.0">
+    </head>
+    <body style="background-color: yellow;">
+<!--Homework01-->
+<a id="top"></a>
+        <h1>LEARN HTML</h1>
+
+        <ol>
+            <li><a href="#document_structure">Document structure</a></li>
+            <li><a href="#text_formating">Text formating (inline elements)</a>
+                <ul>
+                    <li><a href="#headings">Headings</a></li>
+                    <li><a href="#paragraphs_and_words">Paragraphs and words</a></li>
+                </ul>
+            </li>
+            <li><a href="#lists">Lists</a>
+                <ul>
+                    <li><a href="#order_list">Order list</a></li>
+                    <li><a href="#unorder_list">Unorder list</a></li>
+                    <li><a href="#description_list">Description list</a></li>
+                </ul>
+            </li>
+            <li><a href="#media">Media</a>
+                <ul>
+                    <li><a href="#image">Image</a></li>
+                    <li><a href="#audio">Audio</a></li>
+                    <li><a href="#video">Video</a></li>
+                </ul>
+            </li>
+            <li><a href="#tables">Tables</a></li>
+        </ol>
+
+
+        <h1>Introduction to HTML, in this script we will talk about!</h1>
+
+        <img src="./images/images_video_audio/html_logo.png">
+        <h2>Html is?</h2>
+        <p>Html is Hypertext Markup Language, is a language for tagging and structuring the initial layout of a web page, is not a programming language.</p>
+        <h2>Working principle..</h2>
+        <p>Html elements consist of a pair of tags.Tags will be recognized with in the characters of the start tag < > and the end tag < / >. Inside them we write the identifier of the HTML elements.</p>
+        <h2 style="color: blue;" id="document_structure">DOCUMENT STRUCTURE</h2>
+        <p>When writing an HTML document, there are comands that every HTML document should have.</p>
+        <h1>Example!! (document structure)</h1>
+
+        
+        <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+
+        &lt;head&gt;
+        &lt;title&gt; This is title &lt;/title&gt;
+        &lt;/head&gt;
+
+        &lt;body&gt;
+        &lt;h1&gt; This is heading &lt;/h1&gt;
+        &lt;/body&gt;
+
+        &lt;/html&gt;
+        </pre>
+
+        <h1>Example!! (document structure)</h1>
+
+        <pre>
+            &lt;head&gt;
+            &lt;title&gt;This is title&lt;/title&gt;
+            &lt;meta charset="UTF-8"&GT;
+            &lt;meta name="autor" content="Name autor"&gt;
+            &lt;meta name="description" content="name description"&gt;
+            &lt;meta name="viewport" content="defult value"&gt;
+            &lt;/head&gt;
+        </pre>
+
+        <h1 style="color: blue;" id="text_formating">TEXT FORMATING</h1>
+<!--Homework02-->
+        <h2>HTML Formatting Elements (INLINE ELEMENTS)</h2>
+        <img src="./Images/inline_elements/Formating.png">
+        <h1>Inline elements</h1>
+    <p>An inline element does not start on a new line.<br>An inline element only takes up as much width as necessary.
+    </p>
+
+    <h2><strong>Explanation of some inline elements</em></strong></h2>
+
+
+
+    <h3><mark>&lt;span&gt;</mark> element</h3>
+    <ul>
+        <li>
+            The &lt;span&gt; tag is an inline container used to mark up a part of a text, or a part of a document.
+        </li>
+        <li>
+            The &lt;span&gt; tag is easily styled by CSS or manipulated with JavaScript using the class or id attribute.
+        </li>
+        <li>
+            The &lt;span&gt; tag is much like the &lt;div&gt; element, but &lt;div&gt; is a block-level element and
+            &lt;span&gt; is an inline element.
+        </li>
+    </ul>
+    <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+    <img src="./images/inline_elements/span-img.png" alt="span-img">
+
+
+
+    <h3><mark>&lt;small&gt;</mark> element</h3>
+    <ul>
+        <li>
+            The &lt;small&gt; tag defines smaller text (like copyright and other side-comments).
+        </li>
+        <li>
+            <strong>Tip:</strong>This tag is not deprecated, but it is possible to achieve richer (or the same) effect
+            with CSS.
+        </li>
+    </ul>
+    <p>This is some normal text.</p>
+    <p><small>This is some smaller text.</small></p>
+    <img src="./images/inline_elements/small-img.png" alt="small-img">
+
+
+
+    <h3><mark>&lt;mark&gt;</mark> element</h3>
+    <ul>
+        <li>
+            The &lt;mark&gt; tag defines text that should be marked or highlighted.
+        </li>
+    </ul>
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+    <img src="./images/inline_elements/mark-img.png"  alt="mark-img">
+
+
+
+    <h3><mark>&lt;i&gt;</mark> element</h3>
+    <ul>
+        <li>
+            The &lt;i&gt; tag defines a part of text in an alternate voice or mood. The content inside is typically
+            displayed in italic.
+        </li>
+        <li>
+            The &lt;i&gt; tag is often used to indicate a technical term, a phrase from another language, a thought, a
+            ship name, etc.
+        </li>
+        <li>
+            <p>Use the &lt;i&gt; element only when there is not a more appropriate semantic element, such as:</p>
+            <ul>
+                <li>&lt;em&gt; (emphasized text)</li>
+                <li>&lt;strong&gt;(important text)</li>
+                <li>&lt;mark&gt; (marked/highlighted text)</li>
+                <li>&lt;cite&gt;> (the title of a work)</li>
+                <li>&lt;dfn&gt; (a definition term)</li>
+            </ul>
+        </li>
+    </ul>
+    <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+    <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
+    <img src="./images/inline_elements/i-img.png"  alt="i-img">
+
+
+
+    <h3><mark>&lt;del&gt;</mark> and <mark>&lt;ins&gt;</mark> elements</h3>
+    <ul>
+        <li>
+            The &lt;del&gt; tag defines text that has been deleted from a document. Browsers will usually strike a line
+            through deleted text.
+        </li>
+        <li>
+            The &lt;ins&gt; tag defines a text that has been inserted into a document. Browsers will usually underline
+            inserted text.
+        </li>
+    </ul>
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+    <img src="./images/inline_elements/del-ins-img.png" alt="del-ins-img">
+
+
+
+    <h3><mark>&lt;sub&gt;</mark> and <mark>&lt;sup&gt;</mark> elements</h3>
+    <ul>
+        <li>
+            The &lt;sub&gt; tag defines subscript text. Subscript text appears half a character below the normal line,
+            and is
+            sometimes rendered in a smaller font. Subscript text can be used for chemical formulas.
+        </li>
+        <li>
+            The &lt;sup&gt; tag defines superscript text. Superscript text appears half a character above the normal line, and
+            is sometimes rendered in a smaller font. Superscript text can be used for footnotes.
+        </li>
+    </ul>
+    <p>This text contains <sub>subscript</sub> text.</p>
+    <p>This text contains <sup>superscript</sup> text.</p>
+    <img src="./images/inline_elements/sub-img.png" alt="sub">
+    <img src="./images/inline_elements/sup-img.png" alt="sup">
+
+
+
+    <h3><mark>&lt;img&gt;</mark> element</h3>
+    <ul>
+        <li>
+            The &lt;img&gt; tag is used to embed an image in an HTML page.
+        </li>
+    </ul>
+    <img src="./images/inline_elements/img-img.png" alt="img">
+
+
+
+    <h2>There are some more inline elements:</h2>
+    <img src="./images/inline_elements/inline-elements.png" alt="inline-elements">
+
+    <h1 style="color: blue;" id="headings">HEADINGS</h1>
+
+    <h2> &lt;h1&gt; headings should be used for main headings, followed by &lt;h2&gt; headings, then the less important &lt;h3&gt;, and so on.</h2>
+    <h2> &lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</h2>
+    <img src="./Images/headings_paragraphs/headings.png">
+
+    <h1 style="color: blue;" id="paragraphs_and_words">PARAGRAPHS AND WORDS</h1>
+    <p>
+        This paragraph
+        contains a lot of lines
+        in the source code,
+        but the browser
+        ignores it.
+    </p>
+
+    <img src="./Images/headings_paragraphs/paragraphs.png" alt="Paragraphs.png"> <br>
+
+    <img src="./Images/headings_paragraphs/tagdescription.png">
+
+<!--Homework03-->
+
+    <h1 style="color: blue;" id="order_list"><strong>ORDER LIST</strong></h1>
+
+    <h2>Example!! (order list)</h2>
+
+    <ol>
+        <li>&lt;!DOCTYPE html&gt;</li>
+        <li>&lt;html&gt;</li><br>
+        <li>&lt;head&gt;</li>
+        <li>&lt;/head&gt;</li><br>
+        <li>&lt;body&gt;</li>
+        <li>&lt;/body&gt;</li><br>
+        <li>&lt;/html&gt;</li>
+    </ol>
+
+    <h2> An ordered list starts with the &lt;ol&gt; tag. Each list item starts with the &lt;li&gt; tag. </h2>
+
+    <h1 style="color: blue;" id="unorder_list"><strong>UNORDER LIST</strong></h1>
+
+    <h2>Example!! (unorder list)</h2>
+
+    <ul>
+        <li>HTML is the standard markup language for Web pages. With HTML you can create your own Website.</li>
+        <li>HTML describes the structure of a Web page, consists of a series of elements</li>
+    </ul>
+
+    <h2>An unordered list starts with the &lt;ul&gt; tag. Each list item starts with the &lt;li&gt; tag.</h2>
+
+
+    <h1 style="color: blue;" id="description_list"><strong>DESCRIPTION LIST</strong></h1>
+
+    <h2>Example!! (description list)</h2>
+
+    <dl>
+        <dt> <mark>&lt;title&gt;</mark></dt>
+        <dd><i>Title of the HTML page</i></dd>
+        <dt><mark>&lt;meta charset&gt;</mark></dt>
+        <dd><i>To display an HTML page correctly, a web browser must know which character set to use.</i></dd>
+        <dt><mark>&lt;meta autor&gt;</mark></dt>
+        <dd><i>Autor of the HTML page</i></dd>
+        <dt><mark>&lt;meta description&gt;</mark></dt>
+        <dd><i>Description of the page</i></dd>
+        <dt><mark>&lt;meta viewport&gt;</mark></dt>
+        <dd><i>The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.</i></dd>
+    </dl>
+
+    <ul>
+        <li> Use the HTML &lt;dl&gt; element to define a description list</li>
+        <li> Use the HTML &lt;dt&gt; element to define the description term</li>
+        <li> Use the HTML &lt;dd&gt; element to describe the term in a description list</li>
+    </ul>
+
+    <h1 style="color: blue;" id="image"><strong>IMAGES</strong></h1>
+
+    <h2>Example!!</h2>
+
+    <img src="./Images/images_video_audio/html5.png" alt="logo_html" width="150" height="auto">
+    <img src="./Images/images_video_audio/JS.png" alt="logo_js" width="150" height="auto">
+
+    <p>Picture directly from the internet</p>
+
+    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Y6YIEgoh--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/i/n7ccgsmop6f4l4ycu4uv.png" alt="React JS logo" width="250" height="auto">
+
+<!--POGLEDATI PREDAVANJE (AUDIO/VIDEO)-->
+    <h1 style="color: blue;" id="audio"><strong>AUDIO</strong></h1>
+
+
+
+
+
+
+    <h1 style="color: blue;" id="video"><strong>VIDEO</strong></h1>
+
+
+
+
+
+
+    <h1 style="color: blue;" id="tables"><strong>TABLES</strong></h1>
+
+    <p>Each table cell is defined by a &lt;td&gt; and a &lt;/td&gt; tag. td stands for table data.<br>
+    Everything between &lt;td&gt; and &lt;/td&gt; are the content of the table cell.<br>
+    Each table row starts with a &lt;tr&gt; and end with a &lt;/tr&gt; tag. <br>
+    Sometimes you want your cells to be headers, in those cases use the &lt;th&gt; tag instead of the &lt;/th&gt; tag: </p>
+    
+    <h1>Example!! (tables)</h1>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Ingredient</th>
+                <th>amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Flour</td>
+                <td>1 kg</td>
+            </tr>
+            <tr>
+                <td>sugar</td>
+                <td>0.5 kg</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Example3!! (tables)</h1>
+
+    <table border="2" width="700px">
+        <thead>
+            <tr>
+                <th>REDNI BROJ</th>
+                <th>PON</th>
+                <th>UTO</th>
+                <th>SRI</th>
+                <th>ČET</th>
+                <th>PET</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>hj</td>
+                <td>ej</td>
+                <td rowspan="2">mat</td>
+                <td>tzk</td>
+                <td>ej</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>tzk</td>
+                <td>ej</td>
+                <td>kem</td>
+                <td>fiz</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ej</td>
+                <td>hr</td>
+                <td>mat</td>
+                <td rowspan="2">kem</td>
+                <td>hr</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>ej</td>
+                <td>mat</td>
+                <td>tzk</td>
+                <td>ej</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>hr</td>
+                <td colspan="2">ej</td>
+                <td>mat</td>
+                <td>tzk</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--Homework04-->
+
+
+<a href="#top">Back to top</a>
+    </body>
+</html>
