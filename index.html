@@ -46,6 +46,7 @@
             </ul>
         </li>
         <li><a href="#tables">Tables</a></li>
+        <li><a href="#forms">Forms</a></li>
     </ol>
 
 
@@ -297,7 +298,7 @@
         <li> Use the HTML &lt;dt&gt; element to define the description term</li>
         <li> Use the HTML &lt;dd&gt; element to describe the term in a description list</li>
     </ul>
-
+    <a href="#top">Back to top</a>
     <h1 style="color: blue;" id="image"><strong>IMAGES</strong></h1>
 
     <p>Picture directly from the internet</p>
@@ -340,8 +341,10 @@
     </video>
     <p>HTML video format</p>
     <img src="./Images/images_video_audio/video.png" alt="Video formati">
-    <p>More about this:<a href="https://www.w3schools.com/html/html5_video.asp" target="_blank">HTML video tutorijal</a>
+    <p>More about this:<a href="https://www.w3schools.com/html/html5_video.asp" target="_blank">HTML video
+            tutorijal</a><br>
     </p>
+
 
     <!--YOUTUBE VIDEO-->
 
@@ -485,9 +488,10 @@
         </tbody>
     </table>
 
+    <a href="#top">Back to top</a>
     <!--Predavanje 04-->
 
-    <h2>Forms</h2>
+    <h2 style="color: red;">Forms</h2>
     <h3>Search form</h3>
 
     <form action="https://www.ecosia.org/search" method="get" target="_blank">
@@ -514,7 +518,7 @@
 
     <!--PREDAVANJE 05-->
 
-    <h3>Login form</h3>
+    <h3 id="forms">Login form</h3>
     <form action="" novalidate autocomplete="off">
         <input type="email" name="email" placeholder="Email" minlength="8" required>
         <input type="password" name="password" placeholder="Password" required>
@@ -603,7 +607,7 @@
             <option value="2011">2011</option>
 
         </select>
-           
+
         <button type="submit">Let me in!</button>
     </from>
 
@@ -619,9 +623,9 @@
         <input type="radio" name="answer"> 5
     </form>
     <!--HOMEWORK-->
-    
+
     <form action="">
-        <p>Pick your newsletter topics</p>            
+        <p>Pick your newsletter topics</p>
         <label><input type="checkbox" name="newsletter_topic">Animals and plants</label><br>
         <label><input type="checkbox" name="newsletter_topic">Rocks and minerals</label><br>
         <label><input type="checkbox" name="newsletter_topic">People and places</label><br>
@@ -688,6 +692,42 @@
         <button type="submit">Naruči</button>
     </form>
 
+    <!--INPUTI (ponavljanje) PRIMJERI TYPE-->
+    <h3>Primjeri input atributa</h3>
+
+    <input type="color"><br>
+    <input type="datetime-local"><br>
+    <input type="number" autocomplete="number"><br>
+    <input type="text" autofocus>
+    <form action="page.html" method="post">
+        <label>Fruit: <input type="text" name="fruit" dirname="fruit.dir" value="cherry"></label>
+        <input type="submit" />
+    </form>
+
+    <!-- inaccessible -->
+<p>Enter your name: <input id="name" type="text" size="30"></p>
+
+<!-- implicit label -->
+<p><label>Enter your name: <input id="name" type="text" size="30"></label></p>
+
+<!-- explicit label -->
+<p><label for="name">Enter your name: </label><input id="name" type="text" size="30"></p>
+
+<label for="dino-select">Choose a dinosaur:</label>
+<select id="dino-select">
+    <optgroup label="Theropods">
+        <option>Tyrannosaurus</option>
+        <option>Velociraptor</option>
+        <option>Deinonychus</option>
+    </optgroup>
+    <optgroup label="Sauropods">
+        <option>Diplodocus</option>
+        <option>Saltasaurus</option>
+        <option>Apatosaurus</option>
+    </optgroup>
+</select><br>
+
+<!--Kraj-->
 
 
 
