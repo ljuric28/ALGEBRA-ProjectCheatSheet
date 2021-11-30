@@ -9,32 +9,14 @@
     <meta name="viewport" content="width=divace-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">   
-    <style>
-        html{
-            font-size: 18px;
-        }
-        #video{
-           color: #b00; 
-        }
-        ol{
-            color: blue;
-        }
-        body{
-            font-family: 'Roboto Mono', monospace;
-            background-color: #0A86EB;
-        }
-        h2{
-            font-weight: 400;
-            font-size: 30px;
-        }
-        h1{
-            color: #ffffff;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="prism.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet"/>
+    
 </head>
 
 <body>
+    <div class="wrapper">
     <!--Homework01-->
     <a id="top"></a>
     <h1>LEARN HTML</h1>
@@ -85,25 +67,26 @@
     <p>Html elements consist of a pair of tags.Tags will be recognized with in the characters of the start tag <> and
             the end tag
             < />. Inside them we write the identifier of the HTML elements.</p>
-    <h2 style="color: blue;" id="document_structure">DOCUMENT STRUCTURE</h2>
+    <h2 style="color: blue; font-weight: bold;" id="document_structure">DOCUMENT STRUCTURE</h2>
     <p>When writing an HTML document, there are comands that every HTML document should have.</p>
     <h1>Example!! (document structure)</h1>
 
 
     <pre>
-        &lt;!DOCTYPE html&gt;
-        &lt;html&gt;
+<code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
 
-        &lt;head&gt;
-        &lt;title&gt; This is title &lt;/title&gt;
-        &lt;/head&gt;
+&lt;head&gt;
+&lt;title&gt; This is title &lt;/title&gt;
+&lt;/head&gt;
 
-        &lt;body&gt;
-        &lt;h1&gt; This is heading &lt;/h1&gt;
-        &lt;/body&gt;
+&lt;body&gt;
+&lt;h1&gt; This is heading &lt;/h1&gt;
+&lt;/body&gt;
 
-        &lt;/html&gt;
-        </pre>
+&lt;/html&gt;
+</code></pre>
 
     <h1>Example!! (document structure)</h1>
 
@@ -756,9 +739,11 @@
     <!--Predavanje 07-->
     <h2>Semantic.html</h2>
     <a href="./cookbook-example/apple-pie.html">apple-pie.html</a><br>
-
+    <script src="prism.js"></script>
 
     <a href="#top">Back to top</a>
+    
+    </div>
 </body>
 
 </html>

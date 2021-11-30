@@ -1,0 +1,69 @@
+
+        html {
+            font-size: 18px;
+        }
+
+        #video {
+            color: #b00;
+        }
+
+        ol {
+            color: blue;
+        }
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        h2 {
+            color: #ffffff;
+        }
+
+        h3 {
+            color: #ffffff;
+        }
+
+        p {
+            color: #ffffff;
+        }
+
+        li {
+            color: #ffffff;
+        }
+
+        a {
+            color: #ffffff;
+        }
+
+        label {
+            color: #ffffff;
+        }
+
+        table {
+            color: #ffffff;
+        }
+
+        dl {
+            background-color: brown;
+        }
+        :not(pre)>code[class*=language-] {
+            background: #0A86EB;}
+
+            .wrapper{
+                background-color: #0A86EB;
+                width: 100%;
+                max-width: 1024px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        
+    
