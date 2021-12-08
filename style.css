@@ -1,0 +1,38 @@
+html {
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    font-size: 1rem;
+}
+/*(1rem - rooz em -em*) 1rem=15px računa se pr: (20px / 15px 
+što je 1rem =1.33rem;)*/
+.p {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.h6 {
+    font-size: 1.33rem;
+}
+
+.h5 {
+    font-size: 1.66rem;
+}
+
+.h4 {
+    font-size: 2rem;
+}
+
+.h3 {
+    font-size: 2.33rem;
+}
+
+.h2 {
+    font-size: 2.66rem;
+}
+
+.h1 {
+    font-size: 3rem;
+}

@@ -1,35 +1,3 @@
-/*Selektor po elementu*/
-p{
-    color: green;
-}
-/*Selektor po klasi*/
-.important{
+.h1{
     color: red;
-}
-/*Selektor po ID*/
-#intro{
-    color: pink;
-}
-/*Atribut*/
-[target="blank"] {
-    color: green;
-}
-[href^="mailto:"]{
-    color: red;
-}
-/*Pseudo klase*/
-a:hover{
-    color:white;
-}
-a:visited{
-    color: black;
-}
-p:first-of-type{
-    background-color: red;
-}
-p:nth-child(3){
-    background-color: yellow;
-}
-li:nth-child(2n+1){
-    background-color: green;
 }
