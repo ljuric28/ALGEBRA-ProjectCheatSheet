@@ -184,7 +184,8 @@ body {
 .project-description {
     margin-bottom: 16px;
 }
-.project-footer{
+
+.project-footer {
     margin-bottom: 8px;
 }
 
@@ -199,7 +200,8 @@ body {
     line-height: 1rem;
     padding: 13px 8px;
 }
-.project-link:hover{
+
+.project-link:hover {
     text-decoration: underline;
 }
 
@@ -220,4 +222,36 @@ body {
 
 .project-tehnology-list li :last-child {
     margin-right: 0;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip-message {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: auto;
+}
+
+.tooltip:hover .tooltip-message {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 320px;
+}
+
+.floa-row {}
+
+.float-column {
+    float: left;
+    width: 48%;
+    margin: 0 1%;
 }
