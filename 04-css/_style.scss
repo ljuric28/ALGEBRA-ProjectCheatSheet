@@ -1,0 +1,142 @@
+@import "./styles/components/cookie-consent.scss";
+@import "./styles/components/profil-image.scss";
+@import "./styles/components/tooltip.scss";
+@import "./styles/components/float-navigation.scss";
+@import "./styles/components/palette.scss";
+@import "./styles/components/header.scss";
+@import "./styles/unlimited/animation.scss";
+@import "./styles/base/index.scss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+/*na vrh dokumenta css-a stavljamo putanje za fontove i slično */
+html {
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  /* <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+  </style> (kopira se iz fonta na google s desne strane) */
+  body {
+    color: darkblue;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1;
+    background-color: wheat;
+  }
+  
+  /* background:
+        url('./background-pattern.jpg') top right/160px repeat-y,
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABtJREFUGFdjZEADjCD+/////4NoRhDAKoCsCwAgvQgFIv9O8gAAAABJRU5ErkJggg==) top left repeat,
+        linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,255,0,1) 50%, rgba(0,0,255,1) 100%);
+    }*/
+  /*(1rem - rooz em -em*) 1rem=15px računa se pr: (20px / 15px 
+  što je 1rem =1.33rem;)*/
+  .p, p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+  .h6 {
+    font-size: 1.33rem;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .h5, h5 {
+    font-size: 1.66rem;
+    font-weight: 700;
+  }
+  
+  .h4, h4 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .h3, h3 {
+    font-size: 2.33rem;
+    font-weight: 700;
+  }
+  
+  .h2, h2 {
+    font-size: 2.66rem;
+    font-weight: 700;
+  }
+  
+  .h1, h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  
+  /*OVDJE POČINJU PORAVNJANJA*/
+  .text-align-left {
+    text-align: left;
+  }
+  
+  .text-align-right {
+    text-align: right;
+  }
+  
+  .text-align-center {
+    text-align: center;
+  }
+  
+  .text-align-justify {
+    text-align: justify;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .fancy {
+    text-shadow: 0px 2px 0px #ff0001, 0px 4px 0px #00ff01, 0px 6px 0px #00ff01;
+  }
+  
+  .highlights {
+    background-color: red;
+  }
+  
+  /*GREDIJENTI  background:
+        url('./background-pattern.jpg') top right/160px repeat-y,
+        url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABtJREFUGFdjZEADjCD+/////4NoRhDAKoCsCwAgvQgFIv9O8gAAAABJRU5ErkJggg==) top left repeat,
+        linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,255,0,1) 50%, rgba(0,0,255,1) 100%);
+    } */
+  .wrapper {
+    max-width: 1024px;
+    width: 50%;
+    /* margin: top right bottom left   u smjeru kazaljke na satu*/
+    margin: 0 auto;
+    padding: 0 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  /* .button{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 
+  
+    }
+    .text{
+        font-weight: bold;
+    }*/
+  
+  .text {
+    margin-right: 16px;
+  }
+  
+  .yes {
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  .no {
+    text-decoration: underline;
+  }
